@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+    text-transform: unset;
+    text-shadow: none;
+    padding: 150px;
+    margin: auto;
+    background-color: blanchedalmond;
+    
+}
+
+#charge{
+    visibility: hidden;
+}

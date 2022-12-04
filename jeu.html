@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEU</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="fonction.js"></script>
+    <script type="text/javascript" src="fonctionJeu.js"></script>
+</head>
+
+<body>
+    <h1>👨‍💻🤑 BIENVENUE SUR NOTRE PAGE DE JEU EN LIGNE🤑👨‍💻</h1>
+
+    <form id="formulaire">
+        <div class="niveau-container">
+            <center>
+
+                <div class="gain">
+                    <h2>Faites un choix de niveau</h2>
+                </div><br>
+
+                <div id="niveau" class="niveau">
+                    <span class="niveau">
+                        <label for="facile">Facile</label>
+                        <input class="form-check-input" type="radio" name="niveau" value="facile"  checked>
+                    </span>
+                    <span class="niveau">
+                        <label for="moyen">Moyen</label>
+                        <input class="form-check-input" type="radio" name="niveau" value="moyen" >
+                    </span>
+                    <span class="niveau">
+                        <label for="difficile">Difficile</label>
+                        <input class="form-check-input" type="radio" name="niveau" value="difficile" >
+                    </span>
+                </div><br><br>
+
+                <div class="gain">
+                    Porte-feuille :
+                    <span class="gray" id="compte">25000</span> FCFA
+                </div><br><br>
+                <div class="gain">
+                    nombre de tentatives :
+                    <span class="black" id="tentative">0</span>
+                </div><br><br>
+
+                <div id="info">
+                    Bravo, M. <span id="joueur"> </span><span id="resultat"> </span>
+                </div>
+            </center>
+        </div>
+    </form><br><br>
+    <p id="charge" class="">
+        Requete en cours...
+    </p>
+
+
+    <center id="jouer">
+        <div class="jouer">
+            <label for="montant" class="montant">Entrez le montant de votre mise</label>
+            <input type="number" id="mise" class="mise" value="0" required>
+            <input type="button" id="button" class="btn btn-success" name="button" onclick="commencer();" value="JOUER">
+
+        </div>
+
+    </center>
+
+</body>
+<script text="javascript">
+    var nom = localStorage.getItem('nom');
+    document.getElementById("joueur").innerHTML = localStorage.getItem("nom");
+</script>
+
+<script text="javascript">
+    var tentative = 0;
+
+</script>
+
+</html>

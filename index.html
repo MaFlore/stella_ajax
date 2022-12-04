@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACCEUIL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>👨‍💻🤑 BIENVENUE SUR NOTRE PAGE DE JEU EN LIGNE 🤑👨‍💻</h1>
+    <h3>Voici le regle de notre jeu👇</h3>
+    <p>
+        Le jeu est simple!!! Vous disposez sur votre pote-feuille d'un montant initial de 25 000F CFA. <br>
+        Le jeu comprend trois(3) niveaux:
+        <li>Facile</li> 
+        <li>Moyen</li>
+        <li>Difficile</li> <br>
+        Avec un certains taux de complexité par niveaux. <br>
+        Il suffit donc de misé et d'attendre le verdict final. <br>
+        Le tirage d'un nombre au hasard déterminera votre gain. <br>
+
+        Il est à noter que vous ne pouvez miser une somme au  dessus du montant contenu sur votre porte-feuille. <br>
+        Le jeu prend fin lorsque votre porte-feuille est vide.
+       
+     </p><br><br>
+
+    <h4>Maintenant que vous avez bien compris les règles de notre jeu, vous pouvez commencez par jouer!!!</h4><br>
+
+    <form>
+        Indiquez votre Pseudo :
+        <input type="text" id="nom" name="nom" required>
+        <h4>💶💶Cliquez sur le button 👉<a href="jeu.html"><input type="button" id="button" name="button" onclick="debut();" value="COMMENCER"></a>👈et suivez les étapes💶💶</h4>
+    </form> <br><br>
+    
+</body>
+ <script text="javascript">
+     function debut(){
+         var nom = document.getElementById("nom").value;
+         localStorage.setItem("nom", nom);
+     }
+
+ </script>
+</html>
